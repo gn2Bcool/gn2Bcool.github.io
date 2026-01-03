@@ -13,7 +13,8 @@ p {
     color: #3b0b37;
 }
 
-img {
+.bottom {
+    padding-top: 25px;
     image-rendering: pixelated;
 }
 
@@ -28,4 +29,50 @@ img {
     margin-top: 15px;
     background-color: #ffdafda1;
     border: 1px solid #70416d62;
+}
+
+.scrollThing {
+    background-color: rgba(255, 255, 255, 0.42);
+    border: 1px solid #70416d62;
+    padding: .5rem;
+}
+
+.showOff {
+    width: 7rem;
+    border: 1px solid #70416d62;
+    background-color: #e28cde;
+}
+
+.showOff h4 {
+    margin: 2px;
+    text-align: center;
+}
+
+.showOff p {
+    margin: 2px;
+    height: 4rem;
+    white-space: normal;
+    overflow: auto;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.showOff a {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.881);
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    margin: 7px auto 4px
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
