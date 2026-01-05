@@ -23,6 +23,7 @@ a:visited {
 
 p {
     color: #3b0b37;
+    font-size: 0.8rem;
 }
 
 .updateNotifier {
@@ -66,6 +67,10 @@ p {
     border: 1px solid #70416d62;
     background-color: #e28cde;
 }
+h3 {
+    font-size: 1.1rem;
+    font-weight: 900;
+}
 
 .showOff h4 {
     margin: 2px;
@@ -90,6 +95,10 @@ p {
     margin: 7px auto 4px
 }
 
+.fullImage {
+    width: 75%;
+}
+
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 5px;
@@ -101,24 +110,48 @@ p {
   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
-@media only screen and (max-width: 600px) {
-  /* CSS styles for devices with screen width 600px or less */
+@media only screen and (max-width: 1000px) and (pointer:coarse) {
+  h2 {
+        font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
   p {
-    font-size: 1.2rem;
+    font-size: 2.5rem;
   }
   a {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
   .showOff p {
-    font-size: 1.2rem;
+    font-size: 2.2rem;
+    height: 14rem;
   }
   .showOff {
-    width: 9rem;
+    width: 20rem;
   }
   .scrollThing {
-    grid-template-columns: 9rem;
+    grid-template-columns: 20rem;
+    height: 22rem;
   }
   body {
     padding: 15px 15px;
+    max-width: none;
+  }
+  #bottomBar a {
+    padding-right: 10px;
+  }
+  
+  .navbar a {
+    padding-right: 30px;
+  }
+  .bottom {
+    height: 70px
+  }
+  .updateNotifier {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 2.7rem;
   }
 }
